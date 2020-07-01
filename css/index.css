@@ -1,0 +1,141 @@
+.active
+{
+  background-color: lightgreen;
+}
+
+.container
+{
+  text-align: center;
+}
+
+ #clockbox
+{
+
+  display: inline-block;
+  margin: 150px;
+  font-size: 50px;
+  width: auto;
+}
+
+#clockbox2
+{
+  display: inline-block;
+  margin: -20px;
+  font-size: 50px;
+  width: auto;
+}
+
+#title
+{
+  font: bold 22px/1.5 Arial, helvetica, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+#description
+{
+  font-size: 19px;
+  text-align: center;
+  width: 100%;
+  margin-top: 50px;
+}
+
+ul
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: gray;
+  width:100%;
+}
+
+li
+{
+  float: left;
+}
+
+li a, li .dropbtn
+{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active), .dropdown:hover .dropbtn
+{
+  background-color: lightsalmon;
+}
+
+li.dropdown
+{
+  display: inline-block;
+}
+
+.dropdown-content
+{
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a
+{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover
+{
+    background-color: orange;
+}
+
+.dropdown:hover .dropdown-content
+{
+  display: block;
+}
+
+footer
+{
+ position: absolute;
+ right: 0;
+ bottom: 0;
+ left: 0;
+ text-align: center;
+}
+
+@media (max-width: 768px)
+{
+  #title
+  {
+    font-size: 18px;
+  }
+
+  #description
+  {
+    font-size : 15px;
+  }
+
+  #clockbox
+  {
+    font-size: 25px;
+    width: auto;
+  }
+
+  #clockbox2
+  {
+    font-size: 25px;
+    width: auto;
+  }
+}

@@ -1,0 +1,68 @@
+<html>
+       <head>
+              <title>Tutorial1</title>
+              <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+              <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+              <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+              <link href="css/tutorial1.css" type = "text/css" rel="stylesheet">
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <style>
+              </style>
+              <script src="javascript/tutorial1.js">
+              </script>
+       </head>
+       <body onLoad="initialize()">
+         <nav class="navbar navbar-expand-sm navbar-custom">
+<ul class="navbar-nav">
+  <li class="nav-item">
+    <a class="nav-link" href="index.html">Main Page</a>
+  </li>
+
+  <li class="nav-item dropdown active">
+    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+      Tutorials
+    </a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item active"  href="Tutorial1.html">Tutorial1</a>
+      <a class="dropdown-item" href="Tutorial2.html">Tutorial2</a>
+    </div>
+  </li>
+</ul>
+</nav>
+<br>
+<h1 id="gameTitle">Number Guessing Game</h1>
+
+<form name='guessForm' action="javascript():checkGuess()">
+<br>
+<h3 id="name3"><script>document.write("Hello " + name + "! Ready to guess some numbers?");</script></h3>
+<br>
+<br>
+<p>Your Guess: <input type='text' id='userGuess' value='0' size='10' maxlength='2'></p>
+<br>
+<img src='img/guess.jpg' name='thePicture'>
+<br><br>
+<input type='button' id='aGuess' value='Take a Guess' onclick="checkGuess()">
+<input type='reset' id='anotherRound' value='Play Another Round' onclick="playAnotherRound()" disabled>
+<input type='reset' value='Reset the Form' onclick="stopInterval()">
+<br><br>
+<div id="name2"></div>
+<br><br>
+<p id="guessNum">Guess Attempts: <input type='number' id='guessNumber' disabled></p>
+<br>
+<p id="wonNum">Times Won: <input type='number' id='wonNumber' disabled></p>
+<br>
+<p id="lossNum">Times Lost: <input type='number' id='lostNumber' disabled></p>
+</form>
+
+  <div id="footerLocation">
+    <footer>Date Created: June 26, 2020 by Tejas Shah, Copyright @ 2020</footer>
+  </div>
+
+
+
+</body>
+
+</html>
