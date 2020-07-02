@@ -28,6 +28,7 @@ function initialize () {
 function checkGuess () {
   var userGuess = eval(document.guessForm.userGuess.value);
 
+  //This was the area where I was getting bugs at first. I kept getting the game to end at 12 guesses instead of 11.
   while (guessNumber < 11) {
     if (theNumber === userGuess && guessNumber <= 3) {
       document.thePicture.src = 'img/win.jpg';
