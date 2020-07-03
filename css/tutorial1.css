@@ -27,7 +27,7 @@ body
 {
     background-color: lightgreen;
     color:white;
-    text-align:center
+    text-align:center;
 }
 form
 {
@@ -42,11 +42,15 @@ input[readonly="readonly"]
 #gameTitle, #name2, #name3
 {
   color: black;
+  text-align: center;
+  width: 100%;
 }
 
 #guessNum, #wonNum, #lossNum
 {
   color: black;
+  text-align: center;
+  width: 100%;
 }
 
 #footerLocation
@@ -60,4 +64,37 @@ input[readonly="readonly"]
  left: 0;
  text-align: center;
  width: 100%;
+}
+
+@media (max-width: 768px)
+{
+  .navbar
+  {
+    background-color: gray;
+    width:100%;
+    font-size: 14px;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  #gameTitle
+  {
+    margin-top: 75px;
+    width: 100%;
+    font-size: 26px;
+  }
+
+
+
+  body
+  {
+    background-color: lightgray;
+  }
+
+  #footerLocation
+  {
+    background-color: lightgreen;
+    font-size: 18px;
+  }
 }
