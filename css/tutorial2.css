@@ -33,6 +33,54 @@ body
 }
 
 
+#calculatorValue
+{
+  justify-content: center;
+}
+
+.input
+{
+  width: 100%;
+  text-align: right;
+  padding: 3px;
+  margin-bottom: 10px;
+}
+
+.calc-btn
+{
+  background-color: silver;
+  width: 15px;
+  height: 25px;
+  border: 3px solid brown;
+  text-align: center;
+  cursor: pointer;
+  padding-top: 5px;
+
+}
+
+.row
+{
+  display: table;
+  table-layout: fixed;
+  width: 45%;
+}
+
+.column
+{
+  display: table-cell;
+}
+
+#calc-backspace
+{
+  font-size: 24px;
+}
+
+#calc-decimal
+{
+  font-size: 28px;
+}
+
+
 #footerLocation
 {
  background-color: lightgray;
