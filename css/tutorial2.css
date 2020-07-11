@@ -1,28 +1,3 @@
-.active
-{
-  background-color: lightgreen;
-}
-
-.navbar
-{
-  background-color: gray;
-}
-
-.nav-link
-{
-  color: black;
-}
-
-.nav-item:hover
-{
-  background-color: orange;
-}
-
-.dropdown-item:hover
-{
-  background-color: orange;
-}
-
 body
 {
   background-color: #aa9cbc;
@@ -49,11 +24,12 @@ body
   margin-bottom: 20px;
 }
 
-hr
+#horizontalLine
 {
   background-color: #556323;
   width: 100%;
   margin-bottom: 20px;
+  padding: 3px;
 }
 
 
